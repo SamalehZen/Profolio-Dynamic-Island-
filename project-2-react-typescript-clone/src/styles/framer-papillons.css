@@ -1,0 +1,49 @@
+/* ============================================================================
+   Framer Papillons (Connector Fillets)
+   CSS for positioning the Framer runtime Dynamic Island and Navigation
+   with their decorative concave connector fillets (papillons).
+   ============================================================================ */
+
+/* Fixed dynamic-island header — flush from top edge */
+.island-slot {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+/* Fixed left navigation rail — vertically centred, flush to left edge */
+.nav-slot {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 90;
+  width: 32px;
+}
+
+/* Mobile: navigation moves to bottom-centre pill */
+@media (max-width: 809px) {
+  .nav-slot {
+    top: auto;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+  }
+}
+
+/* Clear the fixed island at the top */
+.page .content {
+  padding-top: 180px;
+}
+
+@media (max-width: 809px) {
+  .page .content {
+    padding-top: 140px;
+    padding-bottom: 120px;
+  }
+}

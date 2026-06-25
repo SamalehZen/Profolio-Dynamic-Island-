@@ -5,6 +5,7 @@ import { fileURLToPath, URL } from "node:url";
 // Phase 2 — fully independent React + Vite + TypeScript clone.
 // No Framer / unframer runtime; only React, framer-motion (animation lib) and Vite.
 export default defineConfig({
+  base: "/ph/",
   plugins: [react()],
   resolve: {
     alias: {

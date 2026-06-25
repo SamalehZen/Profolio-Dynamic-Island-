@@ -6,6 +6,8 @@ import "@fontsource-variable/inter";
 
 import "@/styles/tokens.css";
 import "@/styles/global.css";
+import "@/framer/tokens.css";
+import "@/styles/framer-papillons.css";
 import App from "@/App";
 
 const rootEl = document.getElementById("root");

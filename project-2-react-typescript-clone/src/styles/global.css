@@ -86,15 +86,30 @@ svg {
 .content {
   width: 100%;
   max-width: var(--measure);
-  padding: 160px 0 0;
+  padding: 160px 20px 40px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
+/* Clear the fixed island and navigation rail */
+.page .content {
+  padding-top: 180px;
+}
+
+/* Reserve room for the left nav pill between tablet and mid-desktop */
+@media (min-width: 768px) and (max-width: 1080px) {
+  .content {
+    padding-left: 64px;
+    padding-right: 24px;
+  }
+}
+
 @media (max-width: 809px) {
   .content {
     gap: 64px;
+    padding-top: 140px;
+    padding-bottom: 120px;
   }
 }
 
