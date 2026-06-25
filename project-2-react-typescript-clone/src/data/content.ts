@@ -16,70 +16,70 @@ import workAthema from "@/assets/work-athema.jpeg";
 import workLoganHayes from "@/assets/work-loganhayes.png";
 
 export const profile = {
-  name: "James Doe",
-  role: "Designer",
-  avatarAlt: "Portrait of James Doe",
+  name: "Samaleh Arka",
+  role: "Dev Ops",
+  avatarAlt: "Portrait de Samaleh Arka",
 } as const;
 
 /** Live status shown when the dynamic island is expanded. */
 export const islandStatus: IslandStatus = {
-  location: "Los Angeles, US",
-  temperature: "24°C",
-  condition: "Sunny",
+  location: "Djibouti, DJ",
+  temperature: "36°C",
+  condition: "Ensoleillé",
   available: true,
 };
 
 export const navItems: NavItem[] = [
-  { label: "Home", shortcut: "1", target: "home", icon: HomeIcon },
-  { label: "Experience", shortcut: "2", target: "experience", icon: ExperienceIcon },
-  { label: "About", shortcut: "3", target: "home", icon: AboutIcon },
-  { label: "Works", shortcut: "4", target: "works", icon: WorksIcon },
+  { label: "Accueil", shortcut: "1", target: "home", icon: HomeIcon },
+  { label: "Expérience", shortcut: "2", target: "experience", icon: ExperienceIcon },
+  { label: "À propos", shortcut: "3", target: "home", icon: AboutIcon },
+  { label: "Projets", shortcut: "4", target: "works", icon: WorksIcon },
 ];
 
 export const hero = {
-  greeting: "Hello 👋, I'm James Doe.",
+  greeting: "Bonjour 👋, je suis Samaleh Arka.",
   /** Sentence groups; each line break mirrors the Framer original. */
   introLines: [
     [
-      { text: "A dedicated designer", icon: PaintBrushIcon },
-      { text: "crafting experiences that inspire.", icon: BrainIcon },
+      { text: "Un Dev Ops dévoué", icon: PaintBrushIcon },
+      { text: "qui crée des expériences inspirantes.", icon: BrainIcon },
     ],
     [
-      { text: "I call Los Angeles my home", icon: CityIcon },
-      { text: "where history meets creativity." },
+      { text: "J'appelle Djibouti chez moi", icon: CityIcon },
+      { text: "où l'infrastructure rencontre l'innovation." },
     ],
     [
       {
-        text: "In my free time I explore the world through travel and capture moments with my camera.",
+        text: "Quand je ne code pas, j'explore le monde et capture des moments.",
       },
     ],
     [
-      { text: "Fluent in English and Italian, I love connecting", icon: PlugsConnectedIcon },
-      { text: "with people from all walks of life." },
+      { text: "Bilingue en français et somali, j'adore", icon: PlugsConnectedIcon },
+      { text: "me connecter avec des personnes de tous horizons." },
     ],
   ] satisfies InlineFragment[][],
   ctas: [
-    { label: "Schedule a call", href: "mailto:jamesdoe@mail.com", variant: "primary" },
-    { label: "jamesdoe@mail.com", href: "mailto:jamesdoe@mail.com", variant: "secondary" },
+    { label: "Planifier un appel", href: "mailto:samaleh.arka@mail.com", variant: "primary" },
+    { label: "samaleh.arka@mail.com", href: "mailto:samaleh.arka@mail.com", variant: "secondary" },
   ] satisfies CallToAction[],
 };
 
 export const experience = {
-  heading: "Now",
-  /** The body is split so "PixelCraft Studio" can render as a highlight chip. */
-  before: "Currently working as a Senior Web Designer at ",
-  highlight: "PixelCraft Studio",
+  heading: "Actuellement",
+  /** The body is split so "Arka Infra" can render as a highlight chip. */
+  before: "Actuellement Dev Ops Engineer chez ",
+  highlight: "Arka Infra",
   after:
-    " leading projects focused on creating intuitive, accessible, and visually engaging digital experiences. Collaborating closely with developers and product teams to deliver innovative solutions that enhance user satisfaction.",
+    " je dirige des projets axés sur la création d'infrastructures intuitives, accessibles et performantes. Je collabore étroitement avec les équipes produit et développement pour livrer des solutions innovantes.",
   ctas: [
-    { label: "Download CV", href: "#", variant: "primary" },
-    { label: "See full experience", href: "#experience", variant: "secondary" },
+    { label: "Télécharger CV", href: "#", variant: "primary" },
+    { label: "Voir l'expérience complète", href: "#experience", variant: "secondary" },
   ] satisfies CallToAction[],
 };
 
 export const works = {
-  heading: "Work's",
-  caption: "Example content for demo purposes only.",
+  heading: "Projets",
+  caption: "Contenu d'exemple à des fins de démonstration uniquement.",
   projects: [
     { name: "Volium", image: workVolium, alt: "Volium — brand and product website" },
     { name: "Festina", image: workFestina, alt: "Festina — investment fund website" },
@@ -89,8 +89,8 @@ export const works = {
 };
 
 export const footer = {
-  location: "Rome, Italy CET (UTC +1)",
-  rights: "All rights reserved",
+  location: "Djibouti, DJ (UTC +3)",
+  rights: "Tous droits réservés",
   builtWith: { label: "Framer", href: "https://framer.com" },
-  author: { label: "Federico Esposito", href: "https://x.com/fedexesposito" },
+  author: { label: "Samaleh Arka", href: "#" },
 };
